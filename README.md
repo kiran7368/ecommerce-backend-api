@@ -1,5 +1,10 @@
 # E-Commerce Backend API
-
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-3.1-black?logo=flask)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-336791?logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?logo=docker&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-Authentication-success)
+![Render](https://img.shields.io/badge/Render-Deployed-46E3B7?logo=render&logoColor=white)
 This is a backend project that I built using Flask and PostgreSQL to understand how real-world e-commerce applications work. The project includes user authentication, product management, shopping cart, and order management APIs. It is containerized using Docker and deployed on Render.
 
 ## Live Demo
