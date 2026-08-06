@@ -35,6 +35,8 @@ def create_app():
     app.register_blueprint(product_bp)
     app.register_blueprint(cart_bp)
     app.register_blueprint(order_bp)
+    with app.app_context():
+        db.create_all()
 
     @app.route("/")
     def home():
