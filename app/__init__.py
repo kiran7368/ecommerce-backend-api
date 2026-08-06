@@ -1,5 +1,6 @@
 from flask import Flask
 from flasgger import Swagger
+from flask_cors import CORS
 
 from app.config import Config
 from app.extensions import db, migrate, jwt, bcrypt
@@ -22,6 +23,8 @@ from app.routes.seed import seed_bp
 def create_app():
 
     app = Flask(__name__)
+
+    CORS(app, resources={r"/api/*": {"origins": "*"}})
 
     app.config.from_object(Config)
     Swagger(app)
