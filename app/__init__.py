@@ -15,6 +15,7 @@ from app.routes.cart import cart_bp
 from app.models.order import Order
 from app.models.order_item import OrderItem
 from app.routes.order import order_bp
+from app.routes.seed import seed_bp
 
 
 
@@ -35,6 +36,7 @@ def create_app():
     app.register_blueprint(product_bp)
     app.register_blueprint(cart_bp)
     app.register_blueprint(order_bp)
+    app.register_blueprint(seed_bp)
     with app.app_context():
         db.create_all()
 
